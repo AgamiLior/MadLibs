@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{%block title%}Your Story{%endblock%}
+{% block content %}
+
+<h1>Create Your Madlibs!</h1>
+
+<form action="/form">
+    Place : <input type="text" placeholder="Your Place" name="place" id="input"><br>
+    Noun : <input type="text" placeholder="Your Noun" name="noun" id="input"><br>
+    Verb : <input type="text" placeholder="Your Verb" name="verb" id="input"><br>
+    Adjective : <input type="text" placeholder="Your Adjective" name="adjective" id="input"><br>
+    Plural_noun : <input type="text" placeholder="Your Plural_noun" name="plural_noun" id="input"><br>
+
+    <label for="story">Which Story do you want?</label>
+    <select name="stories" id="stories">
+        <option value="Story1">Story-1</option>
+        <option value="Story2">Story-2</option>
+    </select><br>
+    <button>Submit!</button>
+
+</form>
+{%endblock%}
