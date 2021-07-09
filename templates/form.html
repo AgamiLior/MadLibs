@@ -3,14 +3,7 @@
 {% block content %}
 
 <h1>YOUR STORY:</h1>
-{%if option == 'Story1' %}
-<p> Once upon a time in a long-ago {{place}}, there lived a
-    large {{adjective}} {{noun}}. It loved to {{verb}} {{plural_noun}}.</p>
 
-{% elif option == 'Story2' %}
-<p> I just love to go to {{place}}, there is a lot of {{adjective}} {{noun}}.
-    I am interested in {{verb}} {{plural_noun}}.</p>
-
-{%endif%}
+{{ story }}
 
 {%endblock%}
